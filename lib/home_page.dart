@@ -94,7 +94,10 @@ class _MyHomePageState extends State<MyHomePage>
           Container(
               height: MediaQuery.of(context).size.height - 50.0,
               width: double.infinity,
-              child: TabBarView(controller: _tabController, children: [
+              child: TabBarView(
+                controller: _tabController, 
+                physics: AlwaysScrollableScrollPhysics(),
+                children: [
                 Technical(),
                 Cultural(),
                 Extras(),
