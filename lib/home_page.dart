@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage>
   }
 
   _launchURL() async {
-    const url = '';
+    const url = 'https://equinox.iiitl.ac.in/';
     if (await canLaunch(url)) {
       await launch(url, forceSafariVC: false, forceWebView: false);
     } else {
@@ -106,9 +106,10 @@ class _MyHomePageState extends State<MyHomePage>
         elevation: 10.0,
         backgroundColor: Colors.black,
         child: Image(
-          image: AssetImage('assets/iiiitl.png'),
+          image: AssetImage('assets/iiitl.png'),
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
 
 //      bottomNavigationBar: BottomBar(),
     );
