@@ -58,8 +58,9 @@ class ExtrasDetail extends StatelessWidget {
               ),
             ),
             FlatButton(
+              
               child: Center(
-                child: Text(''),
+                child: Text('Add in List'),
               ),
               onPressed:_launchURL1,
             )
